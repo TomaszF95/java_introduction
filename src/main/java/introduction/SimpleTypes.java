@@ -20,8 +20,19 @@ public class SimpleTypes {
         System.out.println("Wypłata: " + liczbaMieszkancowWuhan);
 
         boolean isPaid = false;
-        System.out.println("Czy zapłacono rachunek? " + isPaid);
+        String isPaidTxt = isPaid ? "tak" : "nie";
+        System.out.println("Czy zapłacono rachunek? " + isPaidTxt);
         isPaid = true;
-        System.out.println("A może teraz zapłacono? " + isPaid);
+       isPaidTxt = isPaid ? "tak" : "nie";
+        System.out.println("A może teraz zapłacono? " + isPaidTxt);
+
+        int index = 0;
+        String name = "Tomasz";
+        char letter = name.charAt(index);
+        System.out.println((index + 1) + " literka w imieniu: " + name + " to " + letter);
+
+        String prefix = "To";
+        boolean isStartingWith = name.startsWith(prefix);
+        System.out.println("Czy imię " + name + " zaczyna się od " + prefix + "? : " + isStartingWith);
     }
 }
